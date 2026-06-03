@@ -1,0 +1,450 @@
+/* ==========================
+   ROOT COLORS
+========================== */
+
+:root {
+
+    --hiro-red: #BC002D;
+    --hiro-white: #FFFFFF;
+    --hiro-black: #222222;
+
+    --purple: #5D2D91;
+    --orange: #FF8C00;
+
+    --light: #F5F5F5;
+
+}
+
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--light);
+    color: var(--hiro-black);
+    line-height: 1.6;
+
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav {
+
+    background-color: var(--purple);
+    padding: 15px;
+
+}
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 0;
+
+}
+
+nav li {
+
+    display: inline;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+nav a:hover {
+
+    color: var(--orange);
+
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: linear-gradient(
+        135deg,
+        var(--purple),
+        var(--orange),
+        var(--hiro-red)
+    );
+
+    color: white;
+
+}
+
+.main-title {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+
+}
+
+.subtitle {
+
+    font-size: 1.2rem;
+
+}
+
+.letter {
+
+    width: 60px;
+
+    height: 60px;
+
+    vertical-align: middle;
+
+}
+
+/* ==========================
+   PAGE HEADERS
+========================== */
+
+.page-header {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: white;
+
+}
+
+.page-header h1 {
+
+    margin-bottom: 15px;
+
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section {
+
+    padding: 40px 20px;
+
+}
+
+section h2 {
+
+    margin-bottom: 20px;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button {
+
+    background-color: var(--hiro-red);
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+    background-color: var(--orange);
+
+}
+
+/* ==========================
+   COUNTER & FACTS
+========================== */
+
+.counter-section,
+.facts,
+.destination-generator,
+.favorite-section {
+
+    text-align: center;
+
+}
+
+#counter {
+
+    font-size: 3rem;
+
+    margin: 15px 0;
+
+}
+
+#factText,
+#destinationResult {
+
+    margin-top: 20px;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+}
+
+/* ==========================
+   HISTORY PAGE
+========================== */
+
+.timeline {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+
+}
+
+.timeline-card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+}
+
+.quiz-card {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+/* ==========================
+   TOURIST PAGE
+========================== */
+
+.tourist-card {
+
+    background-color: white;
+
+    margin-bottom: 30px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+}
+
+.tourist-card img {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    border-radius: 10px;
+
+}
+
+figcaption {
+
+    font-style: italic;
+
+    margin-top: 10px;
+
+}
+
+/* ==========================
+   TABLES
+========================== */
+
+.fact-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.fact-table th,
+.fact-table td {
+
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: left;
+
+}
+
+.fact-table th {
+
+    background-color: var(--hiro-red);
+
+    color: white;
+
+}
+
+/* ==========================
+   FORMS
+========================== */
+
+form {
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+fieldset {
+
+    border: 2px solid var(--purple);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+legend {
+
+    padding: 0 10px;
+
+    font-weight: bold;
+
+}
+
+label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+}
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+}
+
+textarea {
+
+    resize: vertical;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+
+    text-align: center;
+
+    background-color: var(--purple);
+
+    color: white;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    nav ul {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .main-title {
+
+        font-size: 2rem;
+
+    }
+
+    .letter {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+}

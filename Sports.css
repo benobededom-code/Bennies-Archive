@@ -1,0 +1,238 @@
+/* ==========================
+   SPORTS PAGE
+========================== */
+
+.sports-header {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #5D2D91,
+        #FF8C00,
+        #C8102E
+    );
+
+    color: white;
+
+}
+
+.sports-header h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+
+}
+
+/* ==========================
+   TEAM CARDS
+========================== */
+
+.team-card {
+
+    background-color: white;
+
+    margin: 40px auto;
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    transition: transform 0.3s;
+
+}
+
+.team-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+/* ==========================
+   TEAM COLORS
+========================== */
+
+.sanfrecce {
+
+    border-left: 10px solid #5D2D91;
+
+}
+
+.dragonflies {
+
+    border-left: 10px solid #FF8C00;
+
+}
+
+.carp {
+
+    border-left: 10px solid #C8102E;
+
+}
+
+/* ==========================
+   FIGURES
+========================== */
+
+figure {
+
+    text-align: center;
+
+    margin: 20px 0;
+
+}
+
+figcaption {
+
+    margin-top: 10px;
+
+    font-style: italic;
+
+}
+
+/* ==========================
+   MASCOT IMAGES
+========================== */
+
+.mascot {
+
+    width: 250px;
+
+    height: auto;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.4s ease,
+        filter 0.4s ease;
+
+}
+
+/* Grow when hovered */
+
+.mascot:hover {
+
+    transform: scale(1.15);
+
+    filter: drop-shadow(
+        0 0 10px rgba(0,0,0,0.4)
+    );
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.info-btn {
+
+    margin-top: 15px;
+
+}
+
+.info-btn:hover {
+
+    transform: scale(1.1);
+
+}
+
+/* ==========================
+   SPORTS FACT SECTION
+========================== */
+
+.sports-facts {
+
+    text-align: center;
+
+    padding: 40px;
+
+    background-color: white;
+
+    margin: 40px auto;
+
+    width: 90%;
+
+    max-width: 800px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+}
+
+#sportsFact {
+
+    margin-top: 20px;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+}
+
+/* ==========================
+   FLOATING ANIMATION
+========================== */
+
+@keyframes floatMascot {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+.mascot {
+
+    animation: floatMascot 3s infinite ease-in-out;
+
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    .sports-header h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .mascot {
+
+        width: 180px;
+
+    }
+
+    .team-card {
+
+        width: 95%;
+
+    }
+
+}
